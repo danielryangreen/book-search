@@ -1,5 +1,8 @@
 import React from "react";
 import Hero from "../components/Hero";
+import Container from "../components/Container";
+import Row from "../components/Row";
+import Col from "../components/Col";
 
 function Search() {
   return (
@@ -8,7 +11,13 @@ function Search() {
         <h1>(React) Google Books Search</h1>
         <h2>Search for and Save Books of Interest</h2>
       </Hero>
-      <h1>Search</h1>
+      <Container style={{ marginTop: 30 }}>
+        <Row>
+          <Col size="md-12">
+            <h1>Search</h1>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
